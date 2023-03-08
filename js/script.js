@@ -50,7 +50,9 @@ const calculateSavings = () => {
   //   validate saving amount
   if (savingAmount > balance) {
     alert("SavingAmount is greater than balance");
-  } else {
+    return;
+  } 
+  else {
     // view saving amount and remaining balance
     document.getElementById("saving-amount").innerText = savingAmount;
     document.getElementById("remaining-balance").innerText = remainingBalance;
